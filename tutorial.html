@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react@latest/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+      class ShoppingList extends React.Component {
+        render() {
+          return (
+            <div className="shopping-list">
+              <h1>Shopping List for {this.props.name}</h1>
+              <ul>
+                <li>Instagram</li>
+                <li>WhatsApp</li>
+                <li>Oculus</li>
+              </ul>
+            </div>
+          );
+        }
+      }
+
+// Example usage: <ShoppingList name="Mark" />
+      ReactDOM.render(
+        <ShoppingList name="Mark" />,
+        document.getElementById('root')
+      );
+
+    </script>
+  </body>
+</html>
