@@ -12,7 +12,7 @@
     <script type="text/babel">
 
       class ShoppingList extends React.Component {
-        render() {
+        render() {  //this is what I want to render:
           return (
             <div className="shopping-list">
               <h1>Shopping List for {this.props.name}</h1>
@@ -28,7 +28,7 @@
 
 // Example usage: <ShoppingList name="Mark" />
       ReactDOM.render(
-        <ShoppingList name="Mark" />,
+        <ShoppingList name="Mark" />, //when my data changes, React knows to update only what it's changed compared to what is described above in the React.Component
         document.getElementById('root')
       );
 
