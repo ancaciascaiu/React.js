@@ -1,2 +1,1 @@
 This repository holds files written in React.js and is meant for experimenting/learning React.
-To test each file, type "open <filename.html>" in the terminal, which will render the view in your browser.
