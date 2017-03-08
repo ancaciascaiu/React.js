@@ -10,7 +10,5 @@
 	<%= f.submit 'Make appointment' %>
 <% end %>
 
-<% @appointments.each do |a| %>
-	<h3><%= a.title %></h3>
-	<p><%= a.appt_time %></p>
-<% end %>
+<h3> Existing appointments: </h3>
+<%= render 'appointments' %>
