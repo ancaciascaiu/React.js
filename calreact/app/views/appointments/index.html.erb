@@ -2,7 +2,9 @@
 
 <h2> Appointments </h2>
 
-<h3> Make a new appointment </h3>
+<%= react_component('Appointments', appointments: @appointments) %>
+
+<!-- <h3> Make a new appointment </h3>
 
 <%= form_for @appointment, remote: true do |f| %>
 	<%= f.text_field :title %>
@@ -13,4 +15,4 @@
 <h3> Existing appointments: </h3>
 <div id="appointments">
 	<%= render 'appointments' %>
-</div>
+</div> -->
